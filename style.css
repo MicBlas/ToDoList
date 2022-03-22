@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 90vh;
+    width: 60vw;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    text-align: center;
+}
+h1{
+    padding: 50px;
+}
+.newTask, .addTask{
+    width: 30vw;
+    height:3vh;
+}
+.addTask{
+    margin: 10px 0;
+    height: 3vh;
+    border: 1px solid blue;
+    border-radius: 10px;
+    opacity: 50%;
+}
+.addTask:hover{
+    //box-shadow: 10px 5px;
+    background-color: bisque;
+    opacity: 100%;
+}
+.containerTasks{
+    border: 1px solid blue;
+    height: 70%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: aqua;
+    text-align: left;
+}
