@@ -1,4 +1,5 @@
 const addTask = document.querySelector("button");
+let containerTasks = document.querySelector(".containerTasks");
 
 addTask.addEventListener("click",function(){
     let task = document.querySelector("input.newTask");
@@ -20,5 +21,14 @@ addTask.addEventListener("click",function(){
 
     }else{
         alert("Write your new task");
+    }
+})
+
+//Possibility to delete task
+containerTasks.addEventListener("change",function(e){
+    if(e.target.classList.contains("done")){
+        //console.log("done");
+        let nextElement = e.target.nextElementSibling;
+        nextElement.classList.toggle("deleteTask");
     }
 })

@@ -53,3 +53,7 @@ done:hover{
     width: 95%;
     margin-left: 3%;
 }
+.deleteTask{
+    background-color: darkgrey;
+    text-decoration: line-through;
+}
