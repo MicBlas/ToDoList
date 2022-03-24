@@ -26,9 +26,11 @@ addTask.addEventListener("click",function(){
 
 //Possibility to delete task
 containerTasks.addEventListener("change",function(e){
+    let nextElement = e.target.nextElementSibling;
+    
     if(e.target.classList.contains("done")){
         //console.log("done");
-        let nextElement = e.target.nextElementSibling;
+        
         nextElement.classList.toggle("deleteTask");
         e.target.classList.toggle("deleteTask");
     
@@ -37,5 +39,20 @@ containerTasks.addEventListener("change",function(e){
         //console.log("works");
         containerTasks.appendChild(nextElement);
         containerTasks.insertBefore(e.target,nextElement);
+    }else{
+        nextElement.dataset.time= "";
+        //nextElement.value =
     }
+    
+    //Add date and time
+    let today = new Date();
+    let date = today.getFullYear()+"."+today.getMonth()+"."+today.getDay();
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let timeOfTask = date+" "+time;
+    //alert(timeOfTask);
+   
+    nextElement.classList.add("dataset");
+    nextElement.dataset.time= timeOfTask;
+    //alert(nextElement.dataset.time);
+    nextElement.value +="   time:"+timeOfTask;
 }})
