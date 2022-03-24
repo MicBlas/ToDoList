@@ -30,5 +30,12 @@ containerTasks.addEventListener("change",function(e){
         //console.log("done");
         let nextElement = e.target.nextElementSibling;
         nextElement.classList.toggle("deleteTask");
+        e.target.classList.toggle("deleteTask");
+    
+        //Deleted task goes to the end of the list
+    if(e.target.classList.contains("deleteTask")){
+        //console.log("works");
+        containerTasks.appendChild(nextElement);
+        containerTasks.insertBefore(e.target,nextElement);
     }
-})
+}})
