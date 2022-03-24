@@ -37,3 +37,19 @@ h1{
     background-color: aqua;
     text-align: left;
 }
+.done{
+    height: 2vh;
+    width: 2%;
+    //outline: 2px solid blue;  /*border not works, outline good for inputs*/
+}
+done:hover{
+    /*background: white; not working- only outline!*/
+    outline:5px solid grey;
+}
+.newInputStyle{
+    display: inline-block;
+    margin: 1vh 0;
+    height: 3vh;
+    width: 95%;
+    margin-left: 3%;
+}
