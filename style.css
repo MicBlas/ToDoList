@@ -1,59 +1,75 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Brush Script MT", cursive;
+	font-size: 5vh;
 }
-section{
-    height: 90vh;
-    width: 60vw;
-    margin: 0 auto;
-    background-color: antiquewhite;
-    text-align: center;
+body {
+	background-image: url(bg.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
 }
-h1{
-    padding: 50px;
+section {
+	height: 90vh;
+	width: 60vw;
+	margin: 0 auto;
+	//background-color: antiquewhite;
+	text-align: center;
 }
-.newTask, .addTask{
-    width: 30vw;
-    height:3vh;
+h1 {
+	padding: 50px;
+	font-size: 120%;
 }
-.addTask{
-    margin: 10px 0;
-    height: 3vh;
-    border: 1px solid blue;
-    border-radius: 10px;
-    opacity: 50%;
+.newTask,
+.addTask {
+	width: 60vw;
+	//height: 3vh;
 }
-.addTask:hover{
-    //box-shadow: 10px 5px;
-    background-color: bisque;
-    opacity: 100%;
+.addTask {
+	margin: 10px 0;
+	border: 1px solid blue;
+	border-radius: 10px;
+	opacity: 50%;
 }
-.containerTasks{
-    border: 1px solid blue;
-    height: 70%;
-    width: 80%;
-    margin: 0 auto;
-    background-color: aqua;
-    text-align: left;
+.addTask:hover {
+	//box-shadow: 10px 5px;
+	background-color: bisque;
+	opacity: 100%;
 }
-.done{
-    height: 2vh;
-    width: 2%;
-    //outline: 2px solid blue;  /*border not works, outline good for inputs*/
+.containerTasks {
+	//border: 1px solid blue;
+	//height: 70%;
+	width: 80%;
+	margin: 0 auto;
+	//background-color: aqua;
+	text-align: left;
 }
-done:hover{
-    /*background: white; not working- only outline!*/
-    outline:5px solid grey;
+.done {
+	height: 2vh;
+	width: 2%;
+	//outline: 2px solid blue; /*border not works, outline good for inputs*/
 }
-.newInputStyle{
-    display: inline-block;
-    margin: 1vh 0;
-    height: 3vh;
-    width: 95%;
-    margin-left: 3%;
+done:hover {
+	/*background: white; not working- only outline!*/
+	outline: 5px solid grey;
 }
-.deleteTask{
-    background-color: darkgrey;
-    text-decoration: line-through;
+.newInputStyle {
+	display: inline-block;
+	margin: 1vh 0;
+	height: 3wv;
+	width: 95%;
+	margin-left: 3%;
+	border-width: 0 0 1px 0;
+	border-style: dashed;
+	padding: 1%;
+}
+.deleteTask {
+	background-color: darkgrey;
+	text-decoration: line-through;
+}
+.newTask::placeholder {
+	font-size: 4vh;
 }
