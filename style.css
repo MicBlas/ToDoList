@@ -2,8 +2,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Brush Script MT", cursive;
 	font-size: 5vh;
+	font-family: "Grape Nuts", cursive; //add google fonts+add in index
 }
 body {
 	background-image: url(bg.jpg);
@@ -11,9 +11,10 @@ body {
 	background-size: cover;
 	width: 100vw;
 	height: 100vh;
+	overflow: scroll; //add scroll to page
 }
 section {
-	height: 90vh;
+	//height: 90vh;
 	width: 60vw;
 	margin: 0 auto;
 	//background-color: antiquewhite;
@@ -72,4 +73,8 @@ done:hover {
 }
 .newTask::placeholder {
 	font-size: 4vh;
+}
+button.print {
+	margin-top: 5vh;
+	margin-left: 20%;
 }
