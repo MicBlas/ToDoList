@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-size: 4vh;
+	font-size: 3vh;
 	font-family: "Grape Nuts", cursive; //add google fonts+add in index
 }
 body {
@@ -20,7 +20,7 @@ section {
 }
 h1 {
 	padding: 50px;
-	font-size: 120%;
+	font-size: 200%;
 }
 .newTask,
 .addTask {
@@ -42,8 +42,8 @@ h1 {
 	text-align: left;
 }
 .done {
-	height: 2vh;
-	width: 2%;
+	height: 3vh;
+	width: 5%;
 	//outline: 2px solid blue; /*border not works, outline good for inputs*/
 }
 done:hover {
@@ -54,7 +54,7 @@ done:hover {
 	display: inline-block;
 	margin: 1vh 0;
 	height: 3wv;
-	width: 95%;
+	width: 90%;
 	margin-left: 3%;
 	border-width: 0 0 1px 0;
 	border-style: dashed;
